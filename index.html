@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso de Creación de Contenido</title>
+    <meta
+      name="description"
+      content="Ideas, ejemplos y recursos para mejorar tu contenido y construir una marca personal mas fuerte."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header" id="inicio">
+      <p class="eyebrow">Ahora Tengo Página</p>
+      <h1>Curso de Creación de Contenido</h1>
+      <p class="intro">
+        Ideas, ejemplos y recursos para mejorar tu contenido y construir una
+        marca personal más fuerte.
+      </p>
+
+      <div class="search-panel" role="search">
+        <label class="sr-only" for="searchInput">Buscar recursos</label>
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Buscar por nombre o categoría..."
+          autocomplete="off"
+        />
+        <span class="resource-count" id="resourceCount">0 recursos</span>
+      </div>
+
+      <nav class="category-filters" id="categoryFilters" aria-label="Filtros por categoría"></nav>
+    </header>
+
+    <main id="contenido" class="content-shell">
+      <div id="sectionsContainer" class="sections-container" aria-live="polite"></div>
+      <p id="emptyState" class="empty-state" hidden>
+        No encontré recursos con ese filtro. Prueba con otra palabra o categoría.
+      </p>
+    </main>
+
+    <a class="back-to-top" href="#inicio" aria-label="Volver al inicio">↑</a>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
